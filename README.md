@@ -1,7 +1,7 @@
 # Crypto-Exchange-API
 Crypto Exchange API
 A API build with Node.js and MongoDB and can do:
-- Resgister
+- Register
 - Buy/Sell Crypto
 - Transfer to another users
 - View wallet and Transaction history
@@ -11,6 +11,7 @@ Tech to use
 - Express.js
 - MongoDB (Mongoose)
 - Postman (for testing)
+
 
 Setup
 1. Clone the project
@@ -24,7 +25,7 @@ npm install
 	3.1 Go to Mongo Atlas
 	3.2 Create a new project and cluster
 	3.3 Create a database
-	3.4 Get your MongoDB Cennection String (ex. "mongodb+srv://<user>:<pass>@cluster0.mongodb.net/crypto-exchange?retryWrites=true&w=majority")
+	3.4 Get your MongoDB Connection String (ex. "mongodb+srv://<user>:<pass>@cluster0.mongodb.net/crypto-exchange?retryWrites=true&w=majority")
 
 4. Configure .env file
 Create .env file in project and paste
@@ -41,7 +42,7 @@ Test API on Postman
 Server will run on: http://localhost:3000
 
 1. Register User
-POST http://localhost:3000/api/user
+POST http://localhost:3000/api/users
 Body using json:
 {
     "name": "Your username",
@@ -52,7 +53,7 @@ Body using json:
 2.View all User
 GET  http://localhost:3000/api/users
 
-3. Check user walllet
+3. Check user wallet
 GET  http://localhost:3000/api/user/{userId}/wallet
 
 4. Buy Crypto
@@ -85,5 +86,5 @@ Body:
   "amount": *number*
 }
 
-7. Check transantion hitory
+7. Check transaction history
 GET  http://localhost:3000/api/transactions/list/{userId}
