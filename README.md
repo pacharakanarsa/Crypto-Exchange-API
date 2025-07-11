@@ -25,7 +25,7 @@ cd Crypto-Exchange-API
 2. Install dependencies
 npm install
 
-3. Create database in MongoDB
+3. Create database in MongoDB or use mine URL in step 4
 	3.1 Go to Mongo Atlas
 	3.2 Create a new project and cluster
 	3.3 Create a database
