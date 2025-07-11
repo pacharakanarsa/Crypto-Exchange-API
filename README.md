@@ -39,7 +39,7 @@ PORT = 3000
 MONGO_URL=your_mongodb_connection_url
 
 or use mine
-MONGO_URL=mongodb+srv://pacharakanarsa:0CunJApq3hFkDKyx@cluster0.gmfrmwt.mongodb.net/
+MONGO_URL=mongodb+srv://usertest:usertest@cluster0.gmfrmwt.mongodb.net/
 
 6. Start the server
 run this command in bash
