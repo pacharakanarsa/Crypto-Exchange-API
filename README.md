@@ -33,12 +33,15 @@ npm install
 
 4. Configure .env file
 Create .env file in project and paste
+code in .env file
+
 PORT = 3000
 MONGO_URL=your_mongodb_connection_url
-or use mine
-"mongodb+srv://pacharakanarsa:0CunJApq3hFkDKyx@cluster0.gmfrmwt.mongodb.net/"
 
-5. Start the server
+or use mine
+MONGO_URL=mongodb+srv://pacharakanarsa:0CunJApq3hFkDKyx@cluster0.gmfrmwt.mongodb.net/
+
+6. Start the server
 run this command in bash
 node app.js
 
