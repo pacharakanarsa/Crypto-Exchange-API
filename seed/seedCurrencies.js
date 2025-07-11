@@ -1,13 +1,16 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
 const Currency = require("../models/currency.model");
 
-mongoose.connect("mongodb://127.0.0.1:27017/crypto-exchange")
+mongoose.connect(process.env.MONGO_URL)
   .then(async () => {
+    await Currency.deleteMany();
+
     await Currency.insertMany([
-      { symbol: "BTC", name: "Bitcoin" },
-      { symbol: "ETH", name: "Ethereum" },
-      { symbol: "XRP", name: "Ripple" },
-      { symbol: "DOGE", name: "Dogecoin" }
+      { symbol: "BTC", name: "Bitcoin", currentPrice: 1000000 },
+      { symbol: "ETH", name: "Ethereum", currentPrice: 500000 },
+      { symbol: "XRP", name: "Ripple", currentPrice: 20000 },
+      { symbol: "DOGE", name: "Dogecoin", currentPrice: 200 }
     ]);
     console.log("Seeded currencies");
     process.exit();
