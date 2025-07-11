@@ -29,7 +29,7 @@ npm install
 	3.1 Go to Mongo Atlas
 	3.2 Create a new project and cluster
 	3.3 Create a database
-	3.4 Get your MongoDB Connection String (ex. "mongodb+srv://<user>:<pass>@cluster0.mongodb.net/crypto-exchange?retryWrites=true&w=majority")
+	3.4 Get your MongoDB Connection String to use in .env file (ex. "mongodb+srv://<user>:<pass>@cluster0.mongodb.net/crypto-exchange?retryWrites=true&w=majority")
 
 4. Configure .env file
 Create .env file in project and paste
