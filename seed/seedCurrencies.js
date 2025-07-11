@@ -9,10 +9,10 @@ mongoose.connect("mongodb://127.0.0.1:27017/crypto-exchange")
       { symbol: "XRP", name: "Ripple" },
       { symbol: "DOGE", name: "Dogecoin" }
     ]);
-    console.log("✅ Seeded currencies");
+    console.log("Seeded currencies");
     process.exit();
   })
   .catch(err => {
-    console.error("❌ Error seeding:", err);
+    console.error("Error seeding:", err);
     process.exit(1);
   });
